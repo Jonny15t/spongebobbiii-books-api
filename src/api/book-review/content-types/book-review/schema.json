@@ -12,17 +12,173 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Review_Post": {
-      "type": "component",
-      "repeatable": false,
-      "component": "book-reviews.book-review-post",
+    "review_title": {
+      "type": "string",
       "required": true
     },
-    "Book_Details": {
-      "type": "component",
-      "repeatable": false,
-      "component": "book-reviews.book-details",
+    "review_body": {
+      "type": "richtext",
       "required": true
+    },
+    "book_name": {
+      "type": "string",
+      "required": true
+    },
+    "author_name": {
+      "type": "string",
+      "required": true
+    },
+    "publication_year": {
+      "type": "string",
+      "required": true
+    },
+    "genre_1": {
+      "type": "enumeration",
+      "enum": [
+        "Classics",
+        "Dystopia",
+        "Fiction",
+        "Fantasy",
+        "Graphic Novel",
+        "High Fantasy",
+        "Historical Fiction",
+        "Horror",
+        "Literary ",
+        "Manga",
+        "Mystery",
+        "Nonfiction",
+        "Romance",
+        "Science Fiction",
+        "Steampunk",
+        "Urban Fantasy"
+      ],
+      "required": true
+    },
+    "genre_2": {
+      "type": "enumeration",
+      "enum": [
+        "Classics",
+        "Dystopia",
+        "Fiction",
+        "Fantasy",
+        "Graphic Novel",
+        "High Fantasy",
+        "Historical Fiction",
+        "Horror",
+        "Literary ",
+        "Manga",
+        "Mystery",
+        "Nonfiction",
+        "Romance",
+        "Science Fiction",
+        "Steampunk",
+        "Urban Fantasy"
+      ]
+    },
+    "genre_3": {
+      "type": "enumeration",
+      "enum": [
+        "Classics",
+        "Dystopia",
+        "Fiction",
+        "Fantasy",
+        "Graphic Novel",
+        "High Fantasy",
+        "Historical Fiction",
+        "Horror",
+        "Literary ",
+        "Manga",
+        "Mystery",
+        "Nonfiction",
+        "Romance",
+        "Science Fiction",
+        "Steampunk",
+        "Urban Fantasy"
+      ]
+    },
+    "topic_1": {
+      "type": "enumeration",
+      "enum": [
+        "Ace",
+        "Anti-Racist",
+        "History",
+        "Diversity",
+        "LGBTQIA+",
+        "Magical Realism",
+        "Mental Health",
+        "Music",
+        "Mythology",
+        "Psychology",
+        "Retellings",
+        "Spirituality",
+        "Vampires",
+        "War",
+        "Werewolves",
+        "Young Adult",
+        "Zombies"
+      ]
+    },
+    "topic_2": {
+      "type": "enumeration",
+      "enum": [
+        "Ace",
+        "Anti-Racist",
+        "History",
+        "Diversity",
+        "LGBTQIA+",
+        "Magical Realism",
+        "Mental Health",
+        "Music",
+        "Mythology",
+        "Psychology",
+        "Retellings",
+        "Spirituality",
+        "Vampires",
+        "War",
+        "Werewolves",
+        "Young Adult",
+        "Zombies"
+      ]
+    },
+    "topic_3": {
+      "type": "enumeration",
+      "enum": [
+        "Ace",
+        "Anti-Racist",
+        "History",
+        "Diversity",
+        "LGBTQIA+",
+        "Magical Realism",
+        "Mental Health",
+        "Music",
+        "Mythology",
+        "Psychology",
+        "Retellings",
+        "Spirituality",
+        "Vampires",
+        "War",
+        "Werewolves",
+        "Young Adult",
+        "Zombies"
+      ]
+    },
+    "format": {
+      "type": "enumeration",
+      "enum": ["Print", "Digital", "Audio"],
+      "required": true
+    },
+    "pages": {
+      "type": "integer"
+    },
+    "audio_length": {
+      "type": "string"
+    },
+    "overall_rating": {
+      "type": "float",
+      "required": true
+    },
+    "trigger_warnings": {
+      "type": "string"
     }
   }
 }
