@@ -186,6 +186,14 @@
     },
     "slug": {
       "type": "string"
+    },
+    "book_cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
